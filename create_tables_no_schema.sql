@@ -20,7 +20,7 @@ create table product_proprietary (
     product_id         integer primary key,
     proprietary_name    varchar,
     propreitary_name_suffix varchar,
-    non_proprietary_name   varchar,
+    non_proprietary_name   varchar
 );
 
 create table product_info (
