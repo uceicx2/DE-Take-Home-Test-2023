@@ -62,7 +62,7 @@ create table "order" (
     order_status       varchar(50) NOT NULL,
     order_date         timestamp without time zone,
     location_id        integer,
-    FOREIGN KEY (location_id) REFERENCES location (location_id),
+    FOREIGN KEY (location_id) REFERENCES location (location_id)
 );
 
 
