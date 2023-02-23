@@ -12,6 +12,8 @@ drop table if exists location;
 create table product (
     product_id         integer primary key,
     product_type_name  varchar,
+    product_cost       numeric,
+    product_price      numeric,
     proprietary_id     integer,
     FOREIGN KEY (proprietary_id) REFERENCES product (proprietary_id)
 );
@@ -57,8 +59,6 @@ create table order_product (
 
 create table "order" (
     order_id           integer primary key,
-    product_cost       numeric,
-    product_price      numeric,
     order_status       varchar(50) NOT NULL,
     order_date         timestamp without time zone,
     location_id        integer,
