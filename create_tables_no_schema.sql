@@ -12,8 +12,8 @@ drop table if exists location;
 create table product (
     product_id         integer primary key,
     product_type_name  varchar,
-    product_cost       numeric,
-    product_price      numeric,
+    product_cost       integer,
+    product_price      integer,
     proprietary_id     integer,
     FOREIGN KEY (proprietary_id) REFERENCES product (proprietary_id)
 );
